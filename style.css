@@ -1,4 +1,183 @@
-*{
+article{
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+			}
+			article div{
+				flex-basis: 50%;
+				height: auto;
+				background-color: orange;
+				color: white;
+				margin-top: 50;
+				border-radius: 20px;
+				text-align: center;
+				transition-duration: 0.5s;
+				margin-bottom: 20px;
+			}
+			article>div:hover{
+				transform: scale(1.05);
+			}
+			article div input{
+				margin-top: 90px;
+				width: auto;
+				height: auto;
+				margin-bottom: 20px;
+				border-radius: 20px;
+				border: 2px solid orange;
+				font-weight: bold;
+				background-color: yellow;
+				border: 2px solid red;
+				padding: 10;
+				
+			}
+			article div input:hover{
+				cursor: pointer;
+				background-color: red;
+				color: white;
+			}
+			article div div{
+				margin-left: auto;
+				margin-right: auto;
+				height: 200;
+				font-size: 14;
+				text-align: center;
+			}
+			article img{
+				max-width: 100%;
+				max-height: 100%;
+				transition-duration: 2s;
+			}
+			article img:hover{
+				
+			}
+			article div h2{
+				font-size:1.2em;
+				margin-top:20;
+				margin-bottom:20;
+			}
+			article div ul li{
+				text-align: left;
+				list-style-position: outside;
+				//padding-left: 100;
+				margin-left: 30;
+				padding-top:5;
+			}
+			div#lista{
+				height: auto;
+			}
+			div#lista ul{
+				height: 50%;
+			}
+			/*header>div{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			header div div{
+				width: 200;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			div#kep img{
+				//max-width: 40%;
+				float: right;
+			}
+			div#kep{
+				width: 25%;
+				text-align: right;
+			}
+			div#login{
+				width: 25%;
+				text-align: left;
+				font-size: 5;
+			}
+			div#login img{
+				margin-right: 10px;
+			}
+			div#login a{
+				margin-bottom: 10px;
+			}
+			a{
+			text-decoration: none;
+			color: white;
+			}
+			div#kep img{
+				//max-width: 40%;
+				height: 80px;
+				width: 120px;
+			}
+			footer{
+				background-color: #11111F;
+				height: auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				margin-top: 20px;
+			}
+			footer div#szabalyok{
+				text-align: center;
+				color: white;
+				flex-basis: 40%;
+				margin-top: 20px;
+				line-height: 35px;
+				font-size: 14;
+				padding: 0px;
+			}
+			div#pics{
+				display: flex;
+				flex-basis: 20%;
+				display: box;
+				text-align: right;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				padding: 0px;
+			}
+			div#pics img{
+				//width: 20%;
+				//margin: 20px;
+				margin-top: 20px;
+				margin-right: 0px;
+				border-radius: 25px;
+				border: 10px solid #11111F;
+				height: 35px;
+			}
+			div#ikon{
+				display: flex;
+				flex-basis: 20%;
+				color: white;
+				text-align: center;
+				font-size: 15;
+				padding: 0px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			div#ikon img{
+				margin-bottom: 10px;
+				height: 80px;
+				width: 120px;
+			}
+			div#kep img{
+				height: 80px;
+				width: 120px;
+			}
+			div#feher a{
+				background-color: white;
+				color: black;
+				border-radius: 10px;
+			}
+			div#feher{
+				border-radius: 10px;
+			}*/
+			*{
 				margin: 0px;
 				padding: 0px;
 			}
@@ -65,7 +244,6 @@
 			}
 			header div div{
 				width: 200;
-				/*background-color: red;*/
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -95,11 +273,11 @@
 				float: right;
 			}
 			div#kep2{
-				width: 25%;
+				width: 20%;
 				text-align: right;
 			}
 			div#login2{
-				width: 25%;
+				width: 20%;
 				text-align: left;
 				font-size: 5;
 			}
@@ -232,36 +410,9 @@
 				padding: 0px;
 				margin: 0px;
 			}
-			article#idoszak p{
-				line-height: 30px;
-				margin: 30px;
-				font-size: 17;
-				text-align: justify;
-				/*margin-left: 140;
-				margin-right: 140;*/
+			article#ugyfel{
 			}
-			article#idoszak h2{
-				margin: 30px;
-				/*margin-left: 140;*/
-			}
-			article#idoszak h1{
-				margin: 20px;
-				font-size: 25;
-			}
-			span{
-				color: orange;
-			}
-			input#btn, input#btn2{
-				background-color: yellow;
-				padding: 10;
-				border-radius: 10px;
-				border: 2px solid orange;
-				cursor: pointer;
-				font-weight: bold;
-			}
-			input#btn:hover, input#btn2:hover{
-				background-color: orange;
-			}
+			
 			div#feher a{
 				background-color: white;
 				color: black;
@@ -269,66 +420,209 @@
 			}
 			div#feher{
 				border-radius: 10px;
-			}h1 img{
+			}
+			article#ugyfel h1{
+				margin: 20px;
+			}
+			div#uf{
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				/*align-items: center;*/
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+			div#uf div{
+				/*flex-basis: 35%;*/
+				background-color: gray;
+				padding: 20px;
+				border-radius: 20px;
+				background-color: orange;
+				color: white;
+				margin-bottom: 20px;
+			}
+			div#uf div img{
+				max-width: 100%;
+			}
+			div#uf div *{
+				margin-top: 20;
+			}
+			div#uf div h2{
+				margin-top: 10;
+				text-align: center;
+			}
+			div#uf div p{
+				text-align: left;
+			}
+			h1 img{
 				max-height: 50px;
+			}
+			ul li{
+				font-size: 17;
 			}
 			@media only screen and (min-width: 600px){
 				h1 img{
 				min-height: 100px;
 			}
-				header ul{
-					display: flex;
-					flex-direction: row;
-					justify-content: center;
-					list-style-type: none;
-				}
-				header ul li{
-					text-align:center;
-					flex-basis: 20%;
-					font-size: 1.2em;
-					margin-top: 20;
-					margin-bottom: 10;
-				}
-				header ul li a{
-					background-color: #11111F;
-				}
-				div#kep{
-					width: 20%;
+				header{
+				
+				background-color: black;
+				height: auto;
+				margin: 0;
+				color: white;
+				text-align: center;
+				padding-top: 20;
+				background-color: #11111F;
+			}
+			
+			header ul{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				list-style-type: none;
+			}
+			header ul li{
+				text-align:center;
+				flex-basis: 20%;
+				font-size: 1.2em;
+				margin-top: 20;
+				margin-bottom: 10;
+				background-color: #11111F;
+			}
+			header ul li a{
+				text-decoration: none;
+				color: white;
+			}
+			header ul li a{
+				text-decoration: none;
+				color: white;
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			ul li div:hover{
+				cursor: pointer;
+				background-color: white;
+				color: black;
+				border-radius: 10px;
+			}
+			ul li div:hover a{
+				color: black;
+			}
+			h1{
+				text-align: center;
+				
+			}
+			article{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+			}
+			article div{
+				flex-basis: 45%;
+				height: auto;
+				background-color: orange;
+				margin-top: 50;
+				border-radius: 20px;
+				text-align: center;
+				transition-duration: 0.5s;
+				margin-bottom: 20px;
+			}
+			article>div:hover{
+				transform: scale(1.05);
+			}
+			article div input{
+				margin-top: 90px;
+				width: auto;
+				height: auto;
+				margin-bottom: 20px;
+				border-radius: 20px;
+				font-weight: bold;
+				
+			}
+			article div div{
+				margin-left: auto;
+				margin-right: auto;
+				/*background-color: red;*/
+				height: 100;
+				font-size: 14;
+				text-align: center;
+			}
+			article img{
+				max-width: 100%;
+				max-height: 100%;
+				transition-duration: 2s;
+			}
+			article img:hover{
+				/*transform: scale(1.2);*/
+				
+			}
+			article div h2{
+				font-size:20;
+				margin-top:20;
+				margin-bottom:20;
+			}
+			article div ul li{
+				text-align: left;
+				list-style-position: outside;
+				//padding-left: 100;
+				margin-left: 30;
+				padding-top:5;
+			}
+			div#lista{
+				height: auto;
+			}
+			div#lista ul{
+				height: 30%;
+			}
+			header>div{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			header div div{
+				width: 200;
+				/*background-color: red;*/
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			div#kep img{
+				//max-width: 40%;
+			}
+			div#kep{
+				width: 23%;
 
-				}
-				div#login{
-					width: 20%;
-					/*float: right;*/
-				}
-				div#kep2{
-					width: 20%;
-
-				}
-				div#login2{
-					width: 20%;
-					text-align: left;
-					/*float: right;*/
-				}
-				div#login img{
-					margin-right: 10px;
-					/*margin-left: 10px;*/
-				}
-				div#login a{
-					margin-bottom: 0px;
-				}
-				div#login2 img{
-					margin-right: 10px;
-					/*margin-left: 10px;*/
-				}
-				div#login2 a{
-					margin-bottom: 0px;
-				}
-				a.eltuno{
-					display: inline-block;
-					font-size: 16;
-					margin: 0;
-				}
-				footer{
+			}
+			div#login{
+				width: 23%;
+			}
+			div#login img{
+				/*margin-right: 10px;
+				margin-left: 10px;*/
+			}
+			div#login a{
+				margin-bottom: 10px;
+			}
+			a{
+			text-decoration: none;
+			color: white;
+			}
+			div#kep img{
+				//max-width: 40%;
+				height: 80px;
+				width: 120px;
+			}
+			footer{
 				background-color: #11111F;
 				height: auto;
 				display: flex;
@@ -384,42 +678,73 @@
 				height: 80px;
 				width: 120px;
 			}
-
 			div#kep img{
 				height: 80px;
 				width: 120px;
 			}
-			div#kep2 img{
-				height: 80px;
-				width: 120px;
+			div#feher a{
+				background-color: white;
+				color: black;
+				border-radius: 10px;
 			}
-			div#login div div{
-				display: none;
-				margin-left: 5px;
+			div#feher{
+				border-radius: 10px;
 			}
-			div#login ul li a{
-				cursor: pointer;
-				background-color: gray;
-				font-size: 20;
-				margin-top: 0px;
-			}
-			div#login ul *{
-				padding: 0px;
-				margin: 0px;
-			}
-			article{
-				margin-top: 100px;
-				margin-bottom: 700px;
-				
-			}
+			}/*fef*/
+			@media only screen and (min-width: 600px){
+				header ul{
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					list-style-type: none;
+				}
+				header ul li{
+					text-align:center;
+					flex-basis: 20%;
+					font-size: 1.2em;
+					margin-top: 20;
+					margin-bottom: 10;
+				}
+				header ul li a{
+					background-color: #11111F;
+				}
+				div#kep{
+					width: 20%;
+
+				}
+				div#login{
+					width: 20%;
+					/*float: right;*/
+				}
+				div#kep2{
+					width: 20%;
+
+				}
+				div#login2{
+					width: 20%;
+					/*float: right;*/
+				}
+				div#login img{
+					margin-right: 10px;
+					/*margin-left: 10px;*/
+				}
+				div#login a{
+					margin-bottom: 0px;
+				}
+				a.eltuno{
+					display: inline-block;
+					font-size: 16;
+					margin: 0;
+				}
+				footer{
+					margin-top: 250px;
+				}
 			}
 			
-		@media only screen and (min-width: 769px){
-			*{
-				padding: 0;
-				margin:0;
-			}
-			header{
+			
+			@media only screen and (min-width: 780px){
+			/*header{
+				
 				background-color: black;
 				height: auto;
 				margin: 0;
@@ -437,6 +762,222 @@
 			header ul li{
 				text-align:center;
 				flex-basis: 20%;
+				font-size: 1.2em;
+				margin-top: 20;
+				margin-bottom: 10;
+				background-color: #11111F;
+			}
+			header ul li a{
+				text-decoration: none;
+				color: white;
+			}
+			header ul li a{
+				text-decoration: none;
+				color: white;
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			ul li div:hover{
+				cursor: pointer;
+				background-color: white;
+				color: black;
+				border-radius: 10px;
+				
+			}
+			ul li div:hover a{
+				color: black;
+				background-color: white;
+				border-radius: 10px;
+			}
+			h1{
+				text-align: center;
+				font-size: 40;
+			}*/
+			article{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+			}
+			article div{
+				flex-basis: 30%;
+				height: auto;
+				background-color: orange;
+				margin-top: 50;
+				border-radius: 20px;
+				text-align: center;
+				transition-duration: 0.5s;
+				margin-bottom: 20px;
+			}
+			article>div:hover{
+				transform: scale(1.05);
+			}
+			article div input{
+				margin-top: 90px;
+				width: auto;
+				height: auto;
+				margin-bottom: 20px;
+				border-radius: 20px;
+				font-weight: bold;
+				
+			}
+			article div div{
+				margin-left: auto;
+				margin-right: auto;
+				/*background-color: red;*/
+				height: 100;
+				font-size: 14;
+				text-align: center;
+			}
+			article img{
+				max-width: 100%;
+				max-height: 100%;
+				transition-duration: 2s;
+			}
+			article img:hover{
+				/*transform: scale(1.2);*/
+				
+			}
+			article div h2{
+				font-size:1.2em;
+				margin-top:20;
+				margin-bottom:20;
+			}
+			article div ul li{
+				text-align: left;
+				list-style-position: outside;
+				//padding-left: 100;
+				margin-left: 30;
+				padding-top:5;
+			}
+			div#lista{
+				height: auto;
+			}
+			div#lista ul{
+				height: 30%;
+			}
+			/*header>div{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			header div div{
+				width: 200;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			div#kep img{
+				//max-width: 40%;
+			}
+			div#kep{
+				width: 40%;
+
+			}
+			div#login{
+				width: 40%;
+				text-align: right;
+			}
+			div#login img{
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+			div#login a{
+				margin-bottom: 10px;
+			}
+			a{
+			text-decoration: none;
+			color: white;
+			}
+			div#kep img{
+				//max-width: 40%;
+				height: 80px;
+				width: 120px;
+			}
+			footer{
+				background-color: #11111F;
+				height: auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				margin-top: 20px;
+			}
+			footer div#szabalyok{
+				text-align: center;
+				color: white;
+				flex-basis: 20%;
+				margin-top: 20px;
+				line-height: 35px;
+				font-size: 17;
+				padding: 10px;
+			}
+			div#pics{
+				display: flex;
+				flex-basis: 25%;
+				display: box;
+				text-align: right;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				padding: 10px;
+			}
+			div#pics img{
+				//width: 20%;
+				//margin: 20px;
+				margin-top: 20px;
+				margin-right: 10 px;
+				border-radius: 25px;
+				border: 10px solid #11111F;
+				height: 80px;
+			}
+			div#ikon{
+				display: flex;
+				flex-basis: 25%;
+				color: white;
+				text-align: center;
+				font-size: 15;
+				padding: 10px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			div#ikon img{
+				margin-bottom: 10px;
+				height: 80px;
+				width: 120px;
+			}
+			div#kep img{
+				height: 80px;
+				width: 120px;
+			}*/
+			*{
+				padding: 0;
+				margin:0;
+			}
+			header{
+				background-color: black;
+				height: auto;
+				margin: 0;
+				color: white;
+				text-align: center;
+				padding-top: 20;
+				background-color: #11111F;
+			}
+			header ul{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				list-style-type: none;
+			}
+			header ul li{
+				text-align:center;
+				flex-basis: 18%;
 				font-size: 1.2em;
 				margin-top: 20;
 				margin-bottom: 10;
@@ -637,37 +1178,45 @@
 				padding: 0px;
 				margin: 0px;
 			}
-			article#idoszak p{
-				line-height: 30px;
-				margin: 30px;
-				font-size: 17;
-				text-align: justify;
-				margin-left: 140;
-				margin-right: 140;
-			}
-			article#idoszak h2{
-				margin: 30px;
-				margin-left: 140;
-			}
-			article#idoszak h1{
-				margin: 20px;
-			}
-			header ul{
+			div#uf{
+				width: 30%;
 				display: flex;
 				flex-direction: row;
-				justify-content: space-evenly;
-				list-style-type: none;
+				justify-content: space-between;
+				margin-left: 140;
+				margin-top: 30px;
+				margin-bottom: 30px;
 			}
-			header ul li{
-				text-align:center;
-				flex-basis: 18%;
-				font-size: 1.2em;
+			article#ugyfel h1{
+				margin: 20px;
+			}
+			div#uf{
+				width: 30%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+			div#uf div{
+				flex-basis: 35%;
+				background-color: gray;
+				padding: 20px;
+				border-radius: 20px;
+				background-color: orange;
+				color: white;
+			}
+			div#uf div img{
+				max-width: 100%;
+			}
+			div#uf div *{
 				margin-top: 20;
-				margin-bottom: 10;
 			}
-			article{
-				margin-top: 0px;
-				margin-bottom: 0px;
-				
+			div#uf div h2{
+				margin-top: 10;
+				text-align: center;
 			}
-		}
+			div#uf div p{
+				text-align: left;
+			}
+			}
