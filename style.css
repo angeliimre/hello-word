@@ -1091,10 +1091,6 @@ article{
 				line-height: 35px;
 				font-size: 17;
 				padding: 10px;
-				/*display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: center;*/
 			}
 			div#pics{
 				display: flex;
